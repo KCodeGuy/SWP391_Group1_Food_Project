@@ -140,8 +140,14 @@ body {
     border: none;
     outline: none;
     font-weight: 580;
+    border-radius: 3px;
 }
-
+.btn-light {
+    background-color: white;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    font-weight: 800;
+}
 .main-btn:hover {
     cursor: pointer;
     background-color: var(--main-color);
