@@ -1,0 +1,65 @@
+.body-manageStaff {
+    background-color: var(--background-color);
+    padding: 30px;
+}
+
+.body-table {
+    /* border: 1px solid black; */
+    border-radius: 3px;
+    margin: auto;
+    background-color: #f0c879;
+    box-shadow: 1px 1px 4px 2px rgb(107, 107, 116);
+    width: 800px;
+    padding: 30px;
+}
+
+.text-center {
+    padding: 10px;
+    text-shadow: 1px 1px 1px rgb(138, 138, 150);
+}
+
+.body-table table thead {
+    background-color: var(--primary-color);
+    color: white;
+    padding-left: 30px;
+}
+
+.body-table table thead th {
+    padding-left: 25px;
+}
+
+.fa-eye {
+    padding-left: 15px;
+}
+
+.body-table table tbody th {
+    padding-left: 30px;
+}
+
+.body-table table tbody td {
+    padding-left: 30px;
+}
+
+.fa-pen-to-square {
+    padding: 5px;
+}
+
+.fa-trash {
+    padding: 3px;
+}
+.submit{
+    background-color: var( --main-color);
+    width: 160px;
+    border-radius: 3px;
+    margin: 10px;
+}
+.fa-circle-plus{
+    color: white;
+    padding-top: 10px;
+}
+.btn{
+    color: white;
+    font-size: 18px;
+    padding-bottom: 12px;
+    padding-left: 13px;
+}

@@ -21,7 +21,7 @@
 .body-table table thead{
 background-color: var(--primary-color);
 color: white;
-padding-left: 30px;
+padding-left: 10px;
 }
 .body-table table thead th{
     padding-left: 40px;
