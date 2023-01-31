@@ -1,0 +1,51 @@
+.body-staffProfile {
+    background-color: var(--main-btn-hover-color);
+    padding: 30px;
+
+}
+
+.body-form {
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 1px 1px 4px 2px rgb(107, 107, 116);
+    width: 400px;
+    padding: 30px;
+}
+
+.mb-3 {
+
+    padding-left: 15px;
+}
+
+.submit {
+    text-align: center;
+}
+
+/* .cancel {
+    background-color: white;
+    padding: 7px 30px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px 2px var(--primary-color);
+} */
+
+.fa-clipboard-user {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.text-center {
+    padding: 10px;
+    text-shadow: 1px 1px 1px rgb(138, 138, 150);
+}
