@@ -36,9 +36,19 @@
 
 .text-center {
     padding: 10px 0px;
-    text-shadow: 1px 1px 1px rgb(138, 138, 150);
+    text-shadow: 2px 2px 2px rgb(138, 138, 150);
 }
 
 #exampleEmailAddress{
 background-color: lightgray;
+}
+
+.btn-primary{
+    margin-left: 50px;
+}
+.cancel{
+    width: 100px;
+    border: none;
+    height: 35px;
+    border-radius: 3px;
 }

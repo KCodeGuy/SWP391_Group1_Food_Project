@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./assert/css/base.css">
     <link rel="stylesheet" href="./bootstap/bootstrap.css">
     <link rel="stylesheet" href="./assert/css/home.css">
-    <link rel="stylesheet" href="./assert/css/staffProfile.css">
+    <link rel="stylesheet" href="./assert/css/cart.css">
     <link rel="stylesheet" href="./assert/font/fontawesome-free-6.1.2-web/css/all.css">
-    <title>Staff profile</title>
+    <title>Cart</title>
 </head>
 
 <body>
@@ -54,48 +54,82 @@
             </div>
         </nav>
 
-        <div class="container-fluid body-staffProfile">
-            <div class="body-form">
-                <form>
-                    <div class="logo text-center">
-                        <i class="fa-solid fa-clipboard-user fa-circle"></i>
-                    </div>
-                    <h2 class="text-center">STAFF PROFILE</h2>
+        <div class="container-fluid body-cart">
+            <div class="body-table">
+                <table class="table table-striped">
+                    <h2 class="text-center">CART</h2>
+                    <thead class="attribute">
+                        <tr>
+                            <th scope="col">No.</th>
+                            <th scope="col">Picture</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Quantitative</th>
+                            <th scope="col">Price</th>
+                            <th scope="col"> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td><img src="assert/img/Com_ga_sot_thai.png"></td>
+                            <td>Le Van A</td>
+                            <td>
+                                <div class="quantity"><a href="#"><i
+                                            class="fa-sharp fa-solid fa-circle-minus m-lg-8"></i></a> 20 <a href="#"><i
+                                            class="fa-solid fa-circle-plus"></i></a> </div>
+                            </td>
+                            <td>30.000đ</td>
+                            <td>
+                                <a href="#"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td><img src="assert/img/Com_ga_sot_thai.png"></td>
+                            <td>Le Van B</td>
+                            <td>
+                                <div class="quantity"><a href="#"><i
+                                    class="fa-sharp fa-solid fa-circle-minus m-lg-8"></i></a> 20 <a href="#"><i
+                                    class="fa-solid fa-circle-plus"></i></a> </div>
+                            </td>
+                            <td>35.000đ</td>
+                            <td>
+                                <a href="#"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td><img src="assert/img/Com_ga_sot_thai.png"></td>
+                            <td>Le Van c</td>
+                            <td>
+                                <div class="quantity"><a href="#"><i
+                                    class="fa-sharp fa-solid fa-circle-minus m-lg-8"></i></a> 20 <a href="#"><i
+                                    class="fa-solid fa-circle-plus"></i></a> </div>
+                            </td>
+                            <td>40.000đ</td>
+                            <td>
+                                <a href="#"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
 
-                    <div class="mb-3">
-                        <b>Name:</b>
-                        <label>Le Van A</label>
+                    </tbody>
+                </table>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="amount"><b>
+                                <p style="text-align: left;"> Amount</p>
+                            </b></div>
                     </div>
-                    <div class="mb-3">
-                        <b>Phone number:</b>
-                        <label>0932876543</label>
+                    <div class="col-sm-6">
+                        <div class="total">
+                            <p style="text-align: right;">120.000đ</p>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <b>Email:</b>
-                        <label>levana@gmail.com</label>
-                    </div>
-                    <div class="mb-3">
-                        <b>Address:</b>
-                        <label>QL1A, An Bình, Ninh Kiều, Cần Thơ</label>
-                    </div>
-                    <div class="mb-3">
-                        <b>On-option:</b>
-                        <label>Chef</label>
-                    </div>
-                    <div class="mb-3">
-                        <b>Start date:</b>
-                        <label>01/01/2022</label>
-                    </div>
-                    <div class="mb-3">
-                        <b>Salary:</b>
-                        <label>5.000.000đ</label>
-                    </div>
-                    <div class="finalForm">
-                        <button type="submit" name="submit" class="btn btn-primary">Update profile</button>
-                        <button class="cancel">Cancel</button>
-                    </div>
+                </div>
 
-                </form>
+                <div class="submit">
+                    <b class="btn btn-primary">Proceed payment</b>
+                </div>
 
             </div>
 

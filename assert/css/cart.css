@@ -1,4 +1,4 @@
-.body-manageStaff {
+.body-cart {
     background-color: var(--background-color);
     padding: 30px;
 }
@@ -21,11 +21,16 @@
 .body-table table thead {
     background-color: var(--primary-color);
     color: white;
-    padding-left: 30px;
+    padding-left: 10px;
 }
 
 .body-table table thead th {
-    padding-left: 25px;
+    padding-left: 10px;
+}
+
+.fa-circle-plus {
+    padding: none;
+    margin: none;
 }
 
 .fa-eye {
@@ -33,37 +38,37 @@
 }
 
 .body-table table tbody th {
-    padding-left: 30px;
+    padding-left: 10px;
+    ;
 }
 
 .body-table table tbody td {
-    padding-left: 30px;
+    padding-left: 0px;
 }
 
-.body-table table tbody td a{
+.body-table table tbody img {
+    width: 120px;
+    height: 70px;
+    border-radius: 3px;
+}
+
+.quantity {
+    margin-left: 25px;
+}
+
+.body-table table tbody td a {
     color: black;
 }
 
-.fa-pen-to-square {
-    padding: 5px;
+.submit {
+    text-align: center;
+
 }
 
-.fa-trash {
-    padding: 3px;
+.btn-primary {
+    background-color: var(--primary-color);
 }
-.submit{
-    background-color: var( --main-color);
-    width: 128px;
-    border-radius: 3px;
-    margin: 10px;
-}
-.fa-circle-plus{
-    color: white;
-    padding-top: 10px;
-}
-.btn{
-    color: white;
-    font-size: 18px;
-    padding-bottom: 12px;
-    padding-left: 13px;
+
+.btn-primary:hover {
+    background-color: var(--primary-btn-hover-color);
 }

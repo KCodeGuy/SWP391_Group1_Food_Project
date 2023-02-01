@@ -19,18 +19,6 @@
     padding-left: 15px;
 }
 
-.submit {
-    text-align: center;
-}
-
-/* .cancel {
-    background-color: white;
-    padding: 7px 30px;
-    outline: none;
-    border: none;
-    border-radius: 4px;
-    box-shadow: 1px 1px 4px 2px var(--primary-color);
-} */
 
 .fa-user {
     border: 1px solid black;
@@ -47,5 +35,15 @@
 
 .text-center {
     padding: 10px;
-    text-shadow: 1px 1px 1px rgb(138, 138, 150);
+    text-shadow: 2px 2px 2px rgb(138, 138, 150);
 }
+.btn-primary{
+    margin-left: 50px;
+}
+.cancel{
+    width: 100px;
+    border: none;
+    height: 35px;
+    border-radius: 3px;
+}
+

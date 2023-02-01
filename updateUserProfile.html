@@ -56,35 +56,40 @@
 
         <div class="container-fluid body-updateUserProfile">
             <div class="body-form">
-                <form>
+                <form id="myForm">
                     <div class="logo text-center">
                         <i class="fa-solid fa-user-pen fa-circle"></i>
                     </div>
                     <h2 class="text-center">UPDATE USER PROFILE</h2>
                     <div class="mb-3">
                         <b class="form-label">Full name</b>
-                        <input type="fullName" class="form-control" id="exampleFullName" placeholder="Le Van A">
+                        <input type="fullName" class="form-control" id="name" name="name" placeholder="Le Van A">
+                        <div class="alert-warning" id="txtNameMessage"></div>
                       </div>
                       <div class="mb-3">
                         <b class="form-label">Phone number</b>
-                        <input type="phoneNumber" class="form-control" id="examplePhoneNumber" placeholder="09834726473">
+                        <input type="phoneNumber" class="form-control" id="phone" name ="phone"placeholder="09834726473">
+                        <div class="alert-warning" id="txtPhoneMessage"></div>
                       </div>
                       <div class="mb-3">
                         <b class="form-label">Email address</b>
-                        <input type="emailAddress" class="form-control disabled bg-black bg-opacity-10" id="exampleEmailAddress" placeholder="levana@gmail.com" readonly>
+                        <input type="emailAddress" class="form-control disabled bg-black bg-opacity-10" id="email" name="email" placeholder="levana@gmail.com" readonly>
                       </div>
                       <div class="mb-3">
                         <b class="form-label">Address</b>
-                        <input type="address" class="form-control" id="exampleAddress" placeholder="An Bình, Ninh Kiều, Cần Thơ">
+                        <input type="yourAddress" class="form-control" id="address" name="address" placeholder="An Bình, Ninh Kiều, Cần Thơ">
+                        <div class="alert-warning" id="txtAddressMessage"></div>
                       </div>
                       <div class="mb-3">
                         <b class="form-label">Password</b>
-                        <input type="password" class="form-control" id="examplePassword" placeholder="Your password">
+                        <input type="yourPassword" class="form-control" id="password" name="password" placeholder="Your password">
+                        <div class="alert-warning" id="txtPasswordMessage"></div>
                       </div>
+                     
 
-                    <div class="submit">
-                        <b class="btn btn-primary">Update profile</b>
-                        <b class="cancel">Cancel</b>
+                    <div class="finalForm">
+                        <button type="submit" name="submit" class="btn btn-primary">Update profile</button>
+                        <button class="cancel">Cancel</button>
                     </div>
 
                 </form>
@@ -122,6 +127,8 @@
     </div>
 
     <script src="./bootstap/bootstrap.js"></script>
+    <script src="jquery/Jquery.js"></script>
+    <script src="jquery/updateUserProfile.js"></script>
 </body>
 
 </html>
