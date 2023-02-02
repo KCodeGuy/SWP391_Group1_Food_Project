@@ -37,17 +37,20 @@ body {
     box-shadow: 1px 2px rgb(151, 150, 150);
 }
 
-table,
+/* table,
 td,
 th {
     border: 1px solid black;
-}
+} */
 
 table {
     border-collapse: collapse;
     width: 100%;
 }
-
+thead {
+    background-color: var(--primary-color);
+    color: white;
+}
 th, td {
     text-align: center;
 }
@@ -58,7 +61,7 @@ th, td {
 .btn-text-left{
     float: left;
     width: 140px;
-    font-weight: 600;
+    font-weight: 610;
     background-color: var(--primary-btn-hover-color);
     color: white;
     border: 2px solid var(--primary-btn-hover-color);
@@ -67,7 +70,7 @@ th, td {
 .btn-text-right{
     float: right;
     width: 140px;
-    font-weight: 600;
+    font-weight: 610;
     background-color: var(--main-btn-hover-shadow-color);
     color: black;
     border: 2px solid var(--primary-btn-hover-color);
