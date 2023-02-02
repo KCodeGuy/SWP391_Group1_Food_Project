@@ -53,13 +53,14 @@
 }
 .btnAddVoucher{
     background-color: var( --main-color);
-    width: 140px;
+    width: 150px;
     border-radius: 3px;
     margin: 10px;
-    padding: 3px;
+    text-align: center;
+    padding: 5px 10px;
 }
-.btn{
+.btnVoucher{
     color: white;
     font-size: 18px;
-    padding-bottom: 12px;
+    padding: 5px;
 }
