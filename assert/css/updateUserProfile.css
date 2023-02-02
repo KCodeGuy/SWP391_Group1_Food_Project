@@ -43,8 +43,17 @@
 background-color: lightgray;
 }
 
+.finalForm{
+    text-align: center;
+   
+}
 .btn-primary{
-    margin-left: 50px;
+    width: 100px;
+   text-align: center;
+   margin-right: 30px;
+}
+.btn-primary:hover {
+    background-color: var(--primary-btn-hover-color);
 }
 .cancel{
     width: 100px;
@@ -52,3 +61,8 @@ background-color: lightgray;
     height: 35px;
     border-radius: 3px;
 }
+
+.cancel:hover{
+    background-color: var(--main-btn-shadow-color);
+}
+

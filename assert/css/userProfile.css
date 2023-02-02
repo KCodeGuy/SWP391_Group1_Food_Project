@@ -37,8 +37,17 @@
     padding: 10px;
     text-shadow: 2px 2px 2px rgb(138, 138, 150);
 }
+.finalForm{
+    text-align: center;
+   
+}
 .btn-primary{
-    margin-left: 50px;
+    width: 100px;
+   text-align: center;
+   margin-right: 30px;
+}
+.btn-primary:hover {
+    background-color: var(--primary-btn-hover-color);
 }
 .cancel{
     width: 100px;
@@ -47,3 +56,6 @@
     border-radius: 3px;
 }
 
+.cancel:hover{
+    background-color: var(--main-btn-shadow-color);
+}
