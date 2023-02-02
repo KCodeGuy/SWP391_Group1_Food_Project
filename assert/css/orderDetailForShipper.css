@@ -70,9 +70,8 @@
     padding-left: 25px;
 }
 
-.col-sm-9{
-    height: 20px;
-    width: 75%;
+.total {
+    text-align: right;
 }
 .finalForm{
     text-align: center;

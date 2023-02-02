@@ -3,7 +3,7 @@
     padding: 30px;
 }
 
-.body-orderDetail1{
+.body-orderDetail1 {
     border-radius: 3px;
     margin: auto;
     background-color: #f0c879;
@@ -12,7 +12,7 @@
     padding: 30px;
 }
 
-.body-first-orderDeatail{
+.body-first-orderDeatail {
     background-color: var(--background-color);
     padding: 10px;
     border-radius: 3px;
@@ -21,16 +21,18 @@
     box-shadow: 1px 1px 2px 1px rgb(107, 107, 116);
     width: 700px;
 }
+
 /* .row{
     margin: 5px;
     height: 25px;
 
 } */
 
-.form-control{
+.form-control {
     height: 25px;
     margin: 5px;
 }
+
 .text-center {
     margin-top: 30px;
     padding: 10px;
@@ -66,36 +68,37 @@
     color: black;
 }
 
-.quantity{
+.quantity {
     padding-left: 25px;
 }
 
-.col-sm-9{
-    height: 20px;
-    width: 75%;
+
+.total {
+    text-align: right;
 }
-.finalForm{
+
+.finalForm {
     text-align: center;
-   
+
 }
-.btn-primary{
+
+.btn-primary {
     width: 100px;
-   text-align: center;
-   margin-right: 30px;
+    text-align: center;
+    margin-right: 30px;
 }
+
 .btn-primary:hover {
     background-color: var(--primary-btn-hover-color);
 }
-.cancel{
+
+.cancel {
     width: 100px;
     border: none;
     height: 35px;
     border-radius: 3px;
 }
 
-.cancel:hover{
+.cancel:hover {
     background-color: var(--main-btn-shadow-color);
 }
-
-
-
