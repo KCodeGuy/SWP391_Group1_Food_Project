@@ -17,8 +17,8 @@
     padding: 10px;
     border-radius: 3px;
     margin: auto;
-    background-color: #f0c879;
-    border: 1px solid #000000;
+    background-color: #efcd89;
+    box-shadow: 1px 1px 2px 1px rgb(107, 107, 116);
     width: 700px;
 }
 /* .row{
@@ -68,6 +68,11 @@
 
 .quantity{
     padding-left: 35px;
+}
+
+.col-sm-9{
+    height: 20px;
+    width: 75%;
 }
 
 

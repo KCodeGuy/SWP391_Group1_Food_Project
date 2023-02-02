@@ -43,7 +43,7 @@ function checkEmail() {
     } else {
         $("#txtEmailMessage").html("");
     }
-    return patt_password.test(email) && email !== "";
+    return patt_email.test(email) && email !== "";
 }
 function checkAddress() {
     address = $("#address").val();
