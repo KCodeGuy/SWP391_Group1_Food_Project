@@ -59,8 +59,9 @@
     text-align: center;
     padding: 5px 10px;
 }
-.btnVoucher{
+.btn{
     color: white;
     font-size: 18px;
     padding: 5px;
+    border: none;
 }
