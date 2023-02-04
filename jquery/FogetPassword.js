@@ -1,31 +1,51 @@
-function checkPassword() {
-    var passW = document.getElementById("pass").value;
-    var errorPass = document.getElementById("errorPass");
-    var reGexPass =/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+var reGexPass =/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
 
-    if (passW == "" || passW == null) {
-      errorPass.innerHTML = "Password cannot be left blank!";
-    } else if (!reGexPass.test(passW)) {
-      errorPass.innerHTML = "Invalid password!";
-      return false;
-    } else {
-      errorPass.innerHTML = "";
-    }
+function checkAllData() {
+  isValidPass = checkPass();
+  isValidCPass = checkPassConfirm();
 
-    var ConPass = document.getElementById("passw").value;
-    var errorConPass = document.getElementById("errorConPass");
+  isValid = isValidPass && isValidCPass;
 
-    if (ConPass == "" || ConPass == null) {
-      errorConPass.innerHTML = "Confirm password cannot be left blank!";
-    } else if (ConPass != passW) {
-      alert("Confirm password does not match!");
-    } else {
-      errorConPass.innerHTML = "";
-    }
-    
-    if (ConPass && passW && passW == ConPass) {
-      alert("Successful!");
-    }
-    return false;
-    
+  return isValid;
+}
+
+function checkPass() {
+pass = $("#pass").val();
+  if (pass === "") {
+      $("#errorPass").html("Password cannot be left blank!");
+  } else if (reGexPass.test(pass) === false) {
+      $("#errorPass").html("Invalid password!");
+  } else {
+      $("#errorPass").html("");
   }
+  return pass !== "" && reGexPass.test(pass);
+}
+
+function checkPassConfirm() {
+pass = $("#passw").val();
+  if (pass === "") {
+      $("#errorConPass").html("Confirm password cannot be left blank!");
+  } else if (reGexPass.test(pass) === false) {
+      $("#errorConPass").html("Invalid confirm password!");
+  } else {
+      $("#errorConPass").html("");
+  }
+  return pass !== "" && reGexPass.test(pass);
+}
+
+$(document).ready(function () {
+  $("#pass").blur(function () {
+    checkPass();
+  });
+
+  $("#passw").blur(function () {
+    checkPass();
+  });
+
+  $("#myForm").bind({
+      'submit': function () {
+          return checkAllData();
+      }
+  });
+});
+

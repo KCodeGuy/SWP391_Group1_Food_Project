@@ -10,44 +10,52 @@
 </head>
 <body>
     <div class="container">
-        <form class="form-container" action="formapplication" method="post" onsubmit="return FormValidate();">
+        <form class="form-container" action="formapplication" method="post" id="myForm">
 
             <img class="header-logo" src="assert/img/Icon_applicationForm.png">
             <h2 class="form-heading">Application Form</h2>
 
             <div class="form-control">   
-                <label for="name">Full name <span style="color: red;" id="errorName"></span></label>
+                <label for="name">Full name </label>
                 <input type="text" name="name" placeholder="Le Van A" class="form-control" id="name" />
+                <span style="color: red;" id="errorName"></span>
             </div>
 
             <div class="form-control">
-                <label for="phone">Phone number <span style="color: red;" id="errorPhone"></span></label>
+                <label for="phone">Phone number</label>
                 <input type="text" name="phone" placeholder="0123456789" class="form-control" id="phone" />
+                <span style="color: red;" id="errorPhone"></span>
             </div>
 
             <div class="form-control">
-                <label for="email">Email <span style="color: red;" id="errorEmail"></span></label>
+                <label for="email">Email </label>
                 <input type="text" name="email" placeholder="levana@gmail.com" class="form-control" id="email" />
+                <span style="color: red;" id="errorEmail"></span>
             </div>
 
             <div class="form-control">
-                <label for="address" >Address <span style="color: red;" id="errorAddress"></span></label>
+                <label for="address" >Address </label>
                 <input type="text" name="address" placeholder="An Binh, Ninh Kieu, Can Tho" class="form-control" id="address" />
+                <span style="color: red;" id="errorAddress"></span>
             </div>
 
             <div class="form-control">
-                <label for="position">On-position <span style="color: red;" id="errorPosition"></span></label>
+                <label for="position">On-position </span></label>
                 <input type="text" name="position" placeholder="chef" class="form-control" id="position" />
+                <span style="color: red;" id="errorPosition">
             </div>
-
+ 
             <div class="form-control">
-                <label for="note">Note <span style="color: red;" id="errorNote"></span></label>
+                <label for="note">Note </span></label>
                 <input type="text" name="note" placeholder="none" class="form-control" id="note" />
+                <span style="color: red;" id="errorNote">
             </div>
            
             <button type="submit" class="form-submit btn-primary">Submit</button>
         </form>
+        
     </div>
-	<script language="javascript" src="jquery/FormApplication.js"></script>
+	<script src="jquery/Jquery.js"></script>
+    <script src="jquery/FormApplication.js"></script>
 </body>
 </html>
