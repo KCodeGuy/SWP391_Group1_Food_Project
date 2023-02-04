@@ -5,140 +5,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#example').DataTable();
-        });
-    </script>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
-    <title>Update Staff Profile</title>
+    <link rel="stylesheet" href="./assert/css/base.css">
+    <link rel="stylesheet" href="./bootstap/bootstrap.css">
+    <link rel="stylesheet" href="./assert/css/home.css">
+    <link rel="stylesheet" href="./assert/css/manageordered.css">
+    <link rel="stylesheet" href="./assert/font/fontawesome-free-6.1.2-web/css/all.css">
+    <title>Manage staff</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm bg-danger navbar-dark nav-high">
-        <div class="container-fluid">
-            <ul class="navbar-nav main-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Logo</a>
-                </li>
-                <li class="nav-item">
-                    <a style="font-weight: 800;" class="nav-link" href="#">Home page</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Top-sale</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Rercuit</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Recruitment</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Logout</a>
-                </li>
-                <li class="nav-item register">
-                    <a class="nav-link" href="#">Register</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Wrapper contains all website's components -->
+    <div class="container-fluid wrapper">
+        <!-- 1. Navigation -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a href="home.html">
+                    <img class="navbar-logo" src="./assert/img/Logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home-page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Top-sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Recriut</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    <div class="container-fluid big">
-        <div class="container table">
-            <table id="example" class="display" style="width:100%">
-                <thead>
-                    <tr>
-                        <th>No.</th>
-                        <th>ID of order</th>
-                        <th>Name</th>
-                        <th>Quantity</th>
-                        <th>Order date</th>
-                        <th>Total</th>
-                        <th>Status</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>ABC123</td>
-                        <td>Phạm Văn A</td>
-                        <td>30</td>
-                        <td>01/03/2023</td>
-                        <td>200.000đ</td>
-                        <td>Thành công</td>
-                        <td>
-                            <i class="fa fa-eye"></i>
-                            <i class="fas fa-edit"></i>
-                            <i class="fas fa-trash-alt"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>ABC123</td>
-                        <td>Phạm Văn B</td>
-                        <td>30</td>
-                        <td>01/03/2023</td>
-                        <td>200.000đ</td>
-                        <td>Thành công</td>
-                        <td>
-                            <i class="fa fa-eye"></i>
-                            <i class="fas fa-edit"></i>
-                            <i class="fas fa-trash-alt"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>ABC123</td>
-                        <td>Phạm Văn C</td>
-                        <td>30</td>
-                        <td>01/03/2023</td>
-                        <td>200.000đ</td>
-                        <td>Thành công</td>
-                        <td>
-                            <i class="fa fa-eye"></i>
-                            <i class="fas fa-edit"></i>
-                            <i class="fas fa-trash-alt"></i>
-                        </td>
-                    </tr>
-            </table>
-        </div>
-    </div>
-    <div class="fotter row">
-        <div class="col-4 phone">
-            <span><i class='fas fa-phone'></i></span>
-            <h6>0292 730 3636</h6>
-            <h6>0292 360 1995</h6>
-            <h6>0292 730 1988</h6>
-        </div>
-        <div class="col-4 phone">
-            <span>
-                <i class="fas fa-envelope-open"></i>
-            </span>
-            <h6>fptu.cantho@fe.edu.vn</h6>
-        </div>
-        <div class="col-4 phone">
-            <span>
-                <i class="fas fa-map-marker-alt"></i>
-                <h6>600, đường Nguyễn Văn Cừ (nối dài), phường <br>
-                    An Bình,quận Ninh Kiều, TP.Cần Thơ</h6>
-            </span>
+        <div class="container-fluid body-manageStaff">
+            <div class="body-table">
+                <table class="table table-striped">
+                    <h2 class="text-center">MANAGE STAFF</h2>
+
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <div class="submit">
+                                <b class="btn btn-primary">Sort</b>
+                        
+                            </div>
+                        </div>
+                        <div class="col-sm-3 mt-3">
+                            <div class="box">
+                                <div class="container-1">
+                                    <span class="icon"><i class="fa fa-search"></i></span>
+                                    <input type="search" id="search" placeholder="Search..." />
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+
+
+                    <thead class="attribute">
+                        <tr>
+                            <th scope="col">No.</th>
+                            <th scope="col">ID of order</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">order date</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>ABC123</td>
+                            <td>Pham Van A</td>
+                            <td>30</td>
+                            <td>01/03/2023</td>
+                            <td>200.000d</td>
+                            <td>Thành công</td>
+                            
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>ABC123</td>
+                            <td>Lê Van A</td>
+                            <td>20</td>
+                            <td>01/03/2023</td>
+                            <td>200.000d</td>
+                            <td>Thành công</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>ABC123</td>
+                            <td>Pham Van A</td>
+                            <td>30</td>
+                            <td>01/03/2023</td>
+                            <td>200.000d</td>
+                            <td>Thành công</td>
+                        </tr>
+                    </tbody>
+                  </table>
+
+            </div>
+
         </div>
 
+
+
+        <!-- 5. Footer  -->
+        <div class="container-fluid footer">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <i class="fa-solid fa-phone footer-icon"></i>
+                    <h2 class="footer-heading">Phone</h2>
+                    <p class="footer-info">(0292) 730 363</p>
+                    <p class="footer-info">(0292) 730 364</p>
+                    <p class="footer-info">(0292) 730 365</p>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <i class="fa-solid fa-envelope footer-icon"></i>
+                    <h2 class="footer-heading">Email</h2>
+                    <p class="footer-info">group1shop@gmail.com</p>
+                    <p class="footer-info">group1food@gmail.com</p>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <i class="fa-solid fa-location-dot footer-icon"></i>
+                    <h2 class="footer-heading">Address</h2>
+                    <p class="footer-info">Store 1: 600, đường Nguyễn Văn Cừ nối dài, An Bình, Ninh Kiều, Cần Thơ</p>
+                    <p class="footer-info">Store 2: 123/1A Hai Bà Trưng, Thủ Đức, Tp.HCM</p>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <script src="./bootstap/bootstrap.js"></script>
 </body>
 
 </html>
