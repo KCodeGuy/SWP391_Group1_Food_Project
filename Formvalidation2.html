@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register new account</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        var patt_email =
+          /^[a-zA-Z]+\w*([.-_]\w+)*\@[a-zA-Z]+\w*([.-_]\w+)*(\.\w+)+$/;
+        var patt_phone = /^0[1-9]\d{8,10}$/;
+        $(".form-error").hide();
+        $("#successBox").hide();
+
+        function checkUsername() {
+          var tk = $("#username").val();
+          if (tk.trim() == "") $("#username").parent().next().show();
+          else $("#username").parent().next().hide();
+
+          return tk.trim() != "";
+        }
+        $("#username").blur(checkUsername);
+
+        function checkPassword1() {
+          var mk1 = $("#password").val();
+          if (mk1.length < 6 || mk1.length > 20)
+            $("#password").parent().next().show();
+          else $("#password").parent().next().hide();
+
+          return mk1.length >= 6 && mk1.length <= 20;
+        }
+        $("#password").blur(function () {
+          checkPassword1();
+          if ($("#password").val() != "") {
+            checkPassword2();
+          }
+        });
+
+        function checkPassword2() {
+          var mk1 = $("#password").val();
+          var mk2 = $("#confirmPassword").val();
+          if (mk1 != mk2) $("#confirmPassword").parent().next().show();
+          else $("#confirmPassword").parent().next().hide();
+          return mk1 == mk2;
+        }
+        $("#confirmPassword").blur(checkPassword2);
+
+        function checkEmail() {
+          var email = $("#email").val();
+          if (patt_email.test(email) == false)
+            $("#email").parent().next().show();
+          else $("#email").parent().next().hide();
+          return patt_email.test(email);
+        }
+        $("#email").blur(checkEmail);
+
+        function checkPhone() {
+          var phone = $("#phone").val();
+          if (patt_phone.test(phone) == false)
+            $("#phone").parent().next().show();
+          else $("#phone").parent().next().hide();
+
+          return patt_phone.test(phone);
+        }
+        $("#phone").blur(checkPhone);
+
+        $("#submitBtn").click(function () {
+          isValidUsername = checkUsername();
+          isValidPassword1 = checkPassword1();
+          isValidPassword2 = checkPassword2();
+          isValidEmail = checkEmail();
+          isValidPhone = checkPhone();
+
+          isValid =
+            isValidUsername &&
+            isValidPassword1 &&
+            isValidPassword2 &&
+            isValidEmail &&
+            isValidPhone;
+
+          console.log(isValid);
+          if (isValid == true) {
+            $("#successBox").show();
+          } else {
+            $("#successBox").hide();
+          }
+          return false;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">REGISTER NEW ACCOUNT</h1>
+      <div class="mx-auto">
+        <form>
+          <div class="form-group row">
+            <label class="col-4 col-form-label" for="username">Username</label>
+            <div class="col-8">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fa fa-user"></i>
+                  </div>
+                </div>
+                <textarea
+                  id="username"
+                  name="username"
+                  placeholder="Please enter username"
+                  type="text"
+                  class="form-control"
+                  required="required"
+                ></textarea>
+              </div>
+              <span class="form-error form-text text-muted alert alert-danger"
+                >Username can't be empty</span
+              >
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="password" class="col-4 col-form-label">Password</label>
+            <div class="col-8">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fa fa-key"></i>
+                  </div>
+                </div>
+                <input
+                  id="password"
+                  name="password"
+                  placeholder="Please enter password"
+                  type="password"
+                  class="form-control"
+                  required="required"
+                />
+              </div>
+              <span class="form-error form-text text-muted alert alert-danger"
+                >Password length must be from 6 to 20 characters</span
+              >
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="confirmPassword" class="col-4 col-form-label"
+              >Confirm password</label
+            >
+            <div class="col-8">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fa fa-key"></i>
+                  </div>
+                </div>
+                <input
+                  id="confirmPassword"
+                  name="confirmPassword"
+                  placeholder="Please confirm password"
+                  type="password"
+                  class="form-control"
+                  required="required"
+                />
+              </div>
+              <span class="form-error form-text text-muted alert alert-danger"
+                >Password doesn't match</span
+              >
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="email" class="col-4 col-form-label">Email</label>
+            <div class="col-8">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fa fa-address-card-o"></i>
+                  </div>
+                </div>
+                <input
+                  id="email"
+                  name="email"
+                  placeholder="Please enter email"
+                  type="text"
+                  class="form-control"
+                  required="required"
+                />
+              </div>
+              <div class="form-error form-text text-muted alert alert-danger">
+                Email is invalid
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="phone" class="col-4 col-form-label">Phone</label>
+            <div class="col-8">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fa fa-phone"></i>
+                  </div>
+                </div>
+                <input
+                  id="phone"
+                  name="phone"
+                  placeholder="Please enter phone"
+                  type="text"
+                  class="form-control"
+                  required="required"
+                />
+              </div>
+              <p class="form-error form-text text-muted alert alert-danger">
+                Phone is invalid
+              </p>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="offset-4 col-8">
+              <button
+                id="submitBtn"
+                name="submit"
+                type="submit"
+                class="btn btn-primary"
+              >
+                Register
+              </button>
+            </div>
+          </div>
+        </form>
+        <div id="successBox" class="alert alert-success">
+          <strong>Success!</strong>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

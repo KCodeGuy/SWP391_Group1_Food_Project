@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assert/css/ForgetPassword.css" />
+  <link rel="stylesheet" href="assert/css/base.css" />
+  <title>Forget Password</title>
+</head>
+<body>
+  <div class="container">
+    <form class="form-container" action="forgetpassword" method="post" onsubmit="return checkPassword();">
+
+      <h2 class="form-heading">Forgot password</h2>
+      <p class="form-decrit">
+        Please enter the OTP to verify the infomation!
+      </p>
+
+      <div class="form-control">
+        <label class="form-label" for="pass">Password </label>
+        <input type="password" name="pass" class="form-control" id="pass"  />
+        <span style="color: red" id="errorPass"></span>
+      </div>
+
+      <div class="form-control">
+        <label for="passw">Confirm password </label>
+        <input type="password" name="con_passw" class="form-control" id="passw"/>
+        <span style="color: red" id="errorConPass"></span>
+      </div>
+
+      <p class="form-decrit">If you don't have account please
+        <a style="text-decoration: none" href="Register.jsp">register account!</a></p>
+      <div>
+        <button class="form-login btn-primary" type="submit">Submit</button>
+      </div>
+
+      <div>
+        <button class="form-register" type="button">
+        <a style="text-decoration: none" href="Register.jsp">Register</a></button>
+      </div>
+    </form>
+  </div>
+  
+  <script language="javascript" src="jquery/FogetPassword.js"></script>  
+  </body>
+</html>
