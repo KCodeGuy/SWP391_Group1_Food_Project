@@ -1,8 +1,10 @@
 var patt_name = /^[a-zA-Z][a-zA-Z0-9 _ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễếệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ]+$/;
 function checkAllData() {
     isValidName = checkName();
-    isValidName1 = checkPrice();
-    isValid = isValidName && isValidName1;
+    isValidPrice = checkPrice();
+    isValidSalesOff = checkSalesOff();
+    isValidDescription = checkDescription();
+    isValid = isValidName && isValidPrice && isValidSalesOff && isValidDescription;
     return isValid;
 }
 

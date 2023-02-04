@@ -6,9 +6,10 @@ var patt_password = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{
 function checkAllData() {
     isValidName = checkName();
     isValidAddress = checkAddress();
-    isValidAddressEmail = checkAddressEmail();
+    isValidEmail = checkEmail();
     isValidPassword = checkPassword();
-    isValid = isValidName && isValidAddress && isValidPassword;
+    isValidCPassword = checkConfirm();
+    isValid = isValidName && isValidAddress && isValidPassword && isValidEmail && isValidCPassword;
     return isValid;
 }
 
@@ -40,12 +41,10 @@ function checkAddress() {
     address = $("#address").val();
     if (address === "") {
         $("#txtAddressMessage").html("Address can't be empty");
-    } else if (patt_name.test(address) === false) {
-        $("#txtAddressMessage").html("Address is invalid");
     } else {
         $("#txtAddressMessage").html("");
     }
-    return patt_name.test(address) && address !== "";
+    return address !== "";
 }
 
 function checkEmail() {
@@ -72,25 +71,15 @@ function checkPassword() {
     return patt_password.test(password) && password !== "";
 }
 
-function checkPassword() {
-    password = $("#password").val();
-    if (password === "") {
-        $("#txtPasswordMessage").html("Password can't be empty");
-    } else if (patt_password.test(password) === false) {
-        $("#txtPasswordMessage").html("Password is invalid");
-    } else {
-        $("#txtPasswordMessage").html("");
-    }
-    return patt_password.test(password) && password !== "";
-}
-
 function checkConfirm() {
+    password = $("#password").val();
+    confirm = $("#confirm").val();
     if (confirm === password) {
         $("#txtConfirmMessage").html('');
     } else {
         $("#txtConfirmMessage").html("Passwords do not match!");
     }
-    return patt_password.test(confirm) && confirm !== "";
+    return confirm !== password;
 }
 
 $(document).ready(function () {
