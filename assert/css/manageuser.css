@@ -100,7 +100,6 @@ table {
     vertical-align: middle;
     white-space: nowrap;
     position: relative;
-
 }
 
 .container-1 .icon {
@@ -125,7 +124,6 @@ table {
     -moz-border-radius: 5px;
     border-radius: 5px;
     border: 1px solid #000000;
-
     -webkit-transition: all .55s ease;
     -moz-transition: all .55s ease;
     -ms-transition: all .55s ease;

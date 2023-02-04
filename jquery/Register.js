@@ -9,7 +9,6 @@ function checkAllData() {
     isValidAddressEmail = checkAddressEmail();
     isValidPassword = checkPassword();
     isValid = isValidName && isValidAddress && isValidPassword;
-
     return isValid;
 }
 

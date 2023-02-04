@@ -5,7 +5,6 @@ var patt_email = /^\w+([\.-_]\w+)*@\w+([\.-_]\w+)*(\.\w{2,3})+$/;
 function checkAllData() {
     isValidEmail = checkEmail();
     isValid = isValidAddressEmail;
-
     return isValid;
 }
 
