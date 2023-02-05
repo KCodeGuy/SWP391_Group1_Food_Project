@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./assert/css/home.css">
     <link rel="stylesheet" href="./assert/css/updatestaffProfile.css">
     <link rel="stylesheet" href="./assert/font/fontawesome-free-6.1.2-web/css/all.css">
-    <title> Update user profile</title>
+    <title> Update staff profile</title>
 </head>
 
 <body>
@@ -60,47 +60,37 @@
                     <div class="logo text-center">
                         <i class="fa-solid fa-user-pen fa-circle"></i>
                     </div>
-                    <h2 class="text-center">EDIT STAFF PROFILE</h2>
-                    <div class="mb-3">
-                        <b class="form-label">Full name</b>
-                        <input type="fullName" class="form-control" id="name" name="name" placeholder="Le Van A">
-                        <div class="alert-warning" id="txtNameMessage"></div>
-                    </div>
+                    <h2 class="text-center">UPDATE STAFF PROFILE</h2>
                     <div class="mb-3">
                         <b class="form-label">ID staff </b>
-                        <input type="fullName" class="form-control" id="name" name="name" placeholder="123456">
+                        <input type="text" class="form-control bg-black opacity-25" placeholder="123456" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <b class="form-label">Full name</b>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Le Van A">
                         <div class="alert-warning" id="txtNameMessage"></div>
                     </div>
-
                     <div class="mb-3">
                         <b class="form-label">Phone </b>
-                        <input type="phoneNumber" class="form-control" id="phone" name="phone" placeholder="09834726473">
+                        <input type="number" class="form-control" id="phone" name="phone" placeholder="09834726473">
                         <div class="alert-warning" id="txtPhoneMessage"></div>
                     </div>
                     <div class="mb-3">
                         <b class="form-label">Email address</b>
-                        <input type="emailAddress" class="form-control" id="email" name="email" placeholder="levana@gmail.com">
-                        <div class="alert-warning" id="txtAddressMessage"></div>
+                        <input type="text" class="form-control bg-black opacity-25" id="email" name="email" placeholder="levana@gmail.com" readonly>
                     </div>
                     <div class="mb-3">
                         <b class="form-label">Address</b>
-                        <input type="yourAddress" class="form-control" id="address" name="address" placeholder="An Bình, Ninh Kiều, Cần Thơ">
+                        <input type="text" class="form-control" id="address" name="address" placeholder="An Bình, Ninh Kiều, Cần Thơ">
                         <div class="alert-warning" id="txtAddressMessage"></div>
                     </div>
                     <div class="mb-3">
                         <b class="form-label">Start date </b>
-                        <input type="phoneNumber" class="form-control" id="phone" name="phone" placeholder="01/01/2023">
-                        <div class="alert-warning" id="txtPhoneMessage"></div>
+                        <input type="text" class="form-control bg-black opacity-25" placeholder="01/01/2023" readonly>
                     </div>
                     <div class="mb-3">
                         <b class="form-label">Employee role </b>
-                        <input type="phoneNumber" class="form-control" id="phone" name="phone" placeholder="Chef">
-                        <div class="alert-warning" id="txtPhoneMessage"></div>
-                    </div>
-                    <div class="mb-3">
-                        <b class="form-label">Basic salary </b>
-                        <input type="phoneNumber" class="form-control" id="phone" name="phone" placeholder="5.000.000đ">
-                        <div class="alert-warning" id="txtPhoneMessage"></div>
+                        <input type="text" class="form-control bg-black opacity-25" placeholder="Chef" readonly>
                     </div>
 
                     <div class="finalForm">
