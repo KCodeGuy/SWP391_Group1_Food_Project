@@ -1,14 +1,9 @@
 var patt_name = /^[a-zA-Z][a-zA-Z0-9 _ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễếệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ]+$/;
-var patt_phone = /^0[1-9]\d{8}$/;
-var patt_email = /^\w+([\.-_]\w+)*@\w+([\.-_]\w+)*(\.\w{2,3})+$/;
-var patt_password = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
-
 function checkAllData() {
     isValidName = checkName();
-    isValidAddress = checkAddress();
-    isValidPhone = checkPhone();
-    isValid = isValidName && isValidAddress && isValidPhone;
-
+    isValidPrice = checkPrice();
+    isValidSalesOff = checkSalesOff();
+    isValid = isValidName && isValidPrice && isValidSalesOff ;
     return isValid;
 }
 
@@ -23,41 +18,42 @@ function checkName() {
     }
     return patt_name.test(fullName) && fullName !== "";
 }
-
-function checkPhone() {
-    phone = $("#phone").val();
-    if (phone === "") {
-        $("#txtPhoneMessage").html("Phone can't be empty");
-    } else if (patt_phone.test(phone) === false) {
-        $("#txtPhoneMessage").html("Phone is invalid");
+function checkPrice() {
+    price = $("#price").val();
+    if (price === "") {
+        $("#txtNameMessage1").html("Price can't be empty");
+    } else if (price < 0) {
+        $("#txtNameMessage1").html("Price greater than or equal 0");
     } else {
-        $("#txtPhoneMessage").html("");
+        $("#txtNameMessage1").html("");
     }
-    return patt_phone.test(phone) && phone !== "";
+    return patt_name.test(price) && price !== "";
+}
+function checkSalesOff() {
+    salesoff = $("#salesoff").val();
+    if (salesoff === "") {
+        $("#txtNameMessage2").html("Sales off can't be empty");
+    } else if (salesoff < 0 || salesoff > 100) {
+        $("#txtNameMessage2").html("Sale off from 0 to 100");
+    } else {
+        $("#txtNameMessage2").html("");
+    }
+    return patt_name.test(salesoff) && salesoff !== "";
 }
 
-function checkAddress() {
-    address = $("#address").val();
-    if (address === "") {
-        $("#txtAddressMessage").html("Address can't be empty");
-    } else if (patt_name.test(address) === false) {
-        $("#txtAddressMessage").html("Address is invalid");
-    } else {
-        $("#txtAddressMessage").html("");
-    }
-    return patt_name.test(address) && address !== "";
-}
+
 
 $(document).ready(function () {
     $("#name").blur(function () {
         checkName();
     });
-    $("#phone").blur(function () {
-        checkPhone();
+    $("#price").blur(function () {
+        checkPrice();
     });
-    $("#address").blur(function () {
-        checkAddress();
+    $("#salesoff").blur(function () {
+        checkSalesOff();
     });
+
     $("#myForm").bind({
         'submit': function () {
             return checkAllData();
