@@ -7,7 +7,7 @@
     /* for buttons */
     --main-btn-hover-color: rgb(247, 174, 39);
     --main-btn-shadow-color: #c0111a;
-    --main-btn-hover-shadow-color: rgb(202, 125, 36);
+    --main-btn-hover-shadow-color: rgb(241, 166, 80);
     --primary-btn-hover-color: #0e5d88;
 }
 
@@ -21,7 +21,7 @@ html {
 /* For main buttons with Red color: Buy now, Add to card, Cancel.... */
 .btn-main {
     background-color: var(--main-color);
-    padding: 14px 30px;
+    padding: 8px 30px;
     outline: none;
     border: none;
     border-radius: 4px;
