@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assert/css/base.css">
+    <link rel="stylesheet" href="./bootstap/bootstrap.css">
+    <link rel="stylesheet" href="./assert/css/home.css">
+    <link rel="stylesheet" href="./assert/css/paying.css">
+    <link rel="stylesheet" href="./assert/font/fontawesome-free-6.1.2-web/css/all.css">
+    <title>Paying</title>
+</head>
+
+<body>
+    <!-- 1. Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="home.html">
+                <img class="navbar-logo" src="./assert/img/Logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home-page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Top-sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Recriut</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <form action="" class="form-paying">
+        <div class="container-fluild">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-4">
+                        <div class="form-customer-info">
+                            <h4 class="form-heading">USER INFORMATION</h4>
+                            <div class="form-control">
+                                <h4 class="form-label">Họ và tên:</h4>
+                                <input
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="VD: Trần Đăng Khoa"
+                                    value="Tran Dang Khoa"
+                                    readonly
+                                    />
+                                <div class="form-error"></div>
+                            </div>
+                            <div class="form-control">
+                                <h4 class="form-label">Phone:</h4>
+                                <input
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="VD: 0123456789"
+                                    value="0123456789"
+                                    readonly
+                                    />
+                                <div class="form-error"></div>
+                            </div>
+                            <div class="form-control">
+                                <h4 class="form-label">Email:</h4>
+                                <input
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="VD: khoatdce160367@fpt.edu.vn"
+                                    value="khoatdce160367@fpt.edu.vn"
+                                    readonly
+                                    />
+                                <div class="form-error"></div>
+                            </div>
+                            <div class="form-control">
+                                <h4 class="form-label">Address:</h4>
+                                <input
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="VD: Trần Đăng Khoa"
+                                    value="600 Nguyen Van Cu noi dai, Ninh kieu, can Tho"
+                                    readonly
+                                    />
+                                <div class="form-error"></div>
+                            </div>
+                            <div class="form-control">
+                                <h4 class="form-label">Note:</h4>
+                                <input
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="VD: Nhiều gà ít cơm"
+                                    value=""
+                                    />
+                                <div class="form-error">Nhiều gà ít cơm</div>
+                            </div>
+                            
+                            
+                            <div class="form-control">
+                                <div class="form-group">
+                                    <h4 class="form-label form-label-paying">Thanh toán:</h4>
+                                    <div class="form-group-img">
+                                        <img
+                                            src="https://cf.shopee.vn/file/2c46b83d84111ddc32cfd3b5995d9281"
+                                            alt=""
+                                            />
+                                        <img
+                                            src="https://cf.shopee.vn/file/d4bbea4570b93bfd5fc652ca82a262a8"
+                                            alt=""
+                                            />
+                                        <img
+                                            src="https://cf.shopee.vn/file/a0a9062ebe19b45c1ae0506f16af5c16"
+                                            alt=""
+                                            />
+                                        <img
+                                            src="https://cf.shopee.vn/file/38fd98e55806c3b2e4535c4e4a6c4c08"
+                                            alt=""
+                                            />
+                                    </div>
+                                </div>
+    
+                                <div class="form-group form-customer-paying">
+                                    <div class="form-group">
+                                        <input
+                                            id="ship-code"
+                                            type="radio"
+                                            name="form-transport"
+                                            value="0"
+                                            required
+                                            />
+                                        <label for="ship-code">Thanh toán khi nhận</label>
+                                    </div>
+    
+                                    <div class="form-group">
+                                        <input
+                                            id="bank"
+                                            type="radio"
+                                            name="form-transport"
+                                            value="1"
+                                            disabled
+                                            />
+                                        <label for="bank">Chuyển khoản</label>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="form-note-register">
+                                <span>Nếu bạn chưa có tài khoản hãy đăng kí</span>
+                                <a href="home.html">Tại đây.</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-xs-12 col-lg-8">
+                        <h4 class="form-heading">PRODUCT INFORMATION</h4>
+                        <table class="table table-bordered align-middle ">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="table-product-header">NO.</th>
+                                    <th scope="col" class="table-product-header">NAME</th>
+                                    <th scope="col" class="table-product-header">IMAGE</th>
+                                    <th scope="col" class="table-product-header">DESCRIPTION</th>
+                                    <th scope="col" class="table-product-header">QUANTITY</th>
+                                    <th scope="col" class="table-product-header">PRICE</th>
+                                </tr>
+                            </thead>
+                            <tbody> 
+                                <tr> 
+                                    <td class="product-paying-no">1</td>
+                                    <td class="product-paying-name"><a href="">Cơm sườn bì chả</a></td>
+                                    <td class="product-paying-img">
+                                        <img src="assert/img/Com_suon.jpg" alt="" />
+                                    </td>
+                                    <td class="product-paying-description">1 cơm trắng, thịt, bì chả, trứng bì chả, trứngbì chả, trứng</td>
+                                    <td class="product-paying-quantity">2</td>
+                                    <td class="product-paying-price">
+                                        35,000d
+                                        <!-- <fmt:formatNumber type="number" pattern="###,###" value="" />đ -->
+                                    </td>
+                                </tr>
+                                <tr> 
+                                    <td class="product-paying-no">1</td>
+                                    <td class="product-paying-name"><a href="">Cơm sườn bì chả</a></td>
+                                    <td class="product-paying-img">
+                                        <img src="assert/img/Com_suon.jpg" alt="" />
+                                    </td>
+                                    <td class="product-paying-description">1 cơm trắng, thịt, bì chả, trứng bì chả, trứngbì chả, trứng</td>
+                                    <td class="product-paying-quantity">2</td>
+                                    <td class="product-paying-price">
+                                        35,000d
+                                        <!-- <fmt:formatNumber type="number" pattern="###,###" value="" />đ -->
+                                    </td>
+                                </tr>
+                                <tr> 
+                                    <td class="product-paying-no">1</td>
+                                    <td class="product-paying-name"><a href="">Cơm sườn bì chả</a></td>
+                                    <td class="product-paying-img">
+                                        <img src="assert/img/Com_suon.jpg" alt="" />
+                                    </td>
+                                    <td class="product-paying-description">1 cơm trắng, thịt, bì chả, trứng bì chả, trứngbì chả, trứng</td>
+                                    <td class="product-paying-quantity">2</td>
+                                    <td class="product-paying-price">
+                                        35,000d
+                                        <!-- <fmt:formatNumber type="number" pattern="###,###" value="" />đ -->
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                        <table class="table table-bordered align-middle table-voucher">
+                            <tbody>
+                                <tr>
+                                    <td class="table-voucher-label">MÃ GIẢM GIÁ:</td>
+                                    <td class="table-voucher-btn-group">
+                                        <select name="" id="">
+                                            <option value="AXRT123">AXRT123</option>
+                                            <option value="AXRT123">AXRT124</option>
+                                            <option value="AXRT123">AXRT125</option>
+                                        </select>
+                                        <button
+                                            type="button"
+                                            class="btn-main"
+                                            >
+                                            <a href="">SỬ DỤNG</a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-voucher-label">TẠM TÍNH:</td>
+
+                                    <td class="table-voucher-price">
+                                        35,000d
+                                        <!-- <fmt:formatNumber type="number" pattern="###,###" value="" />đ -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-voucher-label">VOUCHER:</td>
+                                    <td class="table-voucher-tax">- 0đ</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-voucher-label">PHÍ SHIP:</td>
+                                    <td class="table-voucher-ship">+ 30,000đ</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-voucher-label">TỔNG TIỀN:</td>
+                                    <td class="table-voucher-total">
+                                        45,000d
+                                        <!-- <fmt:formatNumber type="number" pattern="###,###" value="${totalPrice}" />đ -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="form-paying-btn">
+                            <p>
+                                <strong>Note:</strong> Quý khách vui lòng kiểm tra lại đúng
+                                thông tin khách hàng và thông tin sản phẩm trước khi tiến hành
+                                đặt hàng. Rất cảm ơn quí khách đã quan đặt hàng tại
+                                <strong>Group-1-food
+                                </strong> store. Chúc quí khách may mắn.
+                            </p>
+                            <div class="form-paying-btn-group">
+                                <button type="button" class="btn-primary">
+                                    <a href="home">TIẾP TỤC MUA HÀNG</a>
+                                </button>
+                                <button type="submit" class="btn-main">
+                                    <a href="">ĐẶT HÀNG</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </form>
+
+    <!-- 5. Footer  -->
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <i class="fa-solid fa-phone footer-icon"></i>
+                <h2 class="footer-heading">Phone</h2>
+                <p class="footer-info">(0292) 730 363</p>
+                <p class="footer-info">(0292) 730 364</p>
+                <p class="footer-info">(0292) 730 365</p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <i class="fa-solid fa-envelope footer-icon"></i>
+                <h2 class="footer-heading">Email</h2>
+                <p class="footer-info">group1shop@gmail.com</p>
+                <p class="footer-info">group1food@gmail.com</p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <i class="fa-solid fa-location-dot footer-icon"></i>
+                <h2 class="footer-heading">Address</h2>
+                <p class="footer-info">Store 1: 600, đường Nguyễn Văn Cừ nối dài, An Bình, Ninh Kiều, Cần Thơ</p>
+                <p class="footer-info">Store 2: 123/1A Hai Bà Trưng, Thủ Đức, Tp.HCM</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

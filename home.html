@@ -14,9 +14,10 @@
 
 <body>
   <!-- Wrapper contains all website's components -->
-  <div class="container-fluid wrapper">
+  <div class="container-fluid 
+  ">
     <!-- 1. Navigation -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a href="home.html">
           <img class="navbar-logo" src="./assert/img/Logo.png" alt="">
@@ -109,10 +110,11 @@
     </div>
 
     <!-- 3. Product body -->
-    <div class="container-fluid products">
-      <div class="row">
-        <div class="col-sm-12">
-          <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid home-filter">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <nav class="navbar navbar-expand-lg">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -120,6 +122,9 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-link">
+                    Menu:
+                  </li>
                   <li class="nav-item">
                     <a href="home.html" class="nav-link" aria-current="page">Food</a>
                   </li>
@@ -136,25 +141,184 @@
                   </li>
                 </ul>
                 <form class="d-flex" role="search" action="search" method="get">
-                  <input class="form-control me-2" type="search" placeholder="Nhập tên sản phẩm" aria-label="Search"
+                  <input class="form-control me-2" type="search" placeholder="Cơm sườn bì chả" aria-label="Search"
                     name="txtSearch" value="" />
                   <button class="btn btn-search" type="submit">
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </button>
                   <a class="cart" href="home">
                     <i class="fa-solid fa-cart-plus"></i>
-                    <span class="cart-quantity">0</span>
+                    <span class="cart-quantity">2</span>
                   </a>
                 </form>
               </div>
-          </nav>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- separator -->
+    <div class="container container-sep">
+      <div class="separator"></div>
+    </div>
+
+    <div class="container-fluid container-card">
+      <div class="container">
+        <div class="row mb-6 padding">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="card">
+              <img src="./assert/img/Com_suon.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="card-sale-percent"><span>-35%</span></div>
+                <div class="card-sold-out"><span>Sold-out</span></div>
+                <h5 class="card-title"><a href="#">Cơm sườg bì chả</a></h5>
+                <p class="card-text">1 cơm trắng, thịt, bì chả, trứng bì chả, trứngbì chả, trứng</p>
+                <div class="card-group">
+                  <div class="card-price-group">
+                    <span class="card-price">
+                      35,000d
+                    </span>
+                    <span class="card-original-price">
+                      35,000d
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-main ">
+                  <a href="#" class="">BUY NOW</a>
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="card">
+              <img src="./assert/img/Com_suon.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="card-sale-percent"><span>-35%</span></div>
+                <div class="card-sold-out"><span>Sold-out</span></div>
+                <h5 class="card-title"><a href="#">Cơm sườg bì chả</a></h5>
+                <p class="card-text">1 cơm trắng, thịt, bì chả, trứng bì chả, trứngbì chả, trứng</p>
+                <div class="card-group">
+                  <div class="card-price-group">
+                    <span class="card-price">
+                      35,000d
+                    </span>
+                    <span class="card-original-price">
+                      35,000d
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-main ">
+                  <a href="#" class="">BUY NOW</a>
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="card">
+              <img src="./assert/img/Com_suon.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="card-sale-percent"><span>-35%</span></div>
+                <div class="card-sold-out"><span>Sold-out</span></div>
+                <h5 class="card-title"><a href="#">Cơm sườg bì chả</a></h5>
+                <p class="card-text">1 cơm trắng, thịt, bì chả, trứng bì chả, trứngbì chả, trứng</p>
+                <div class="card-group">
+                  <div class="card-price-group">
+                    <span class="card-price">
+                      35,000d
+                    </span>
+                    <span class="card-original-price">
+                      35,000d
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-main ">
+                  <a href="#" class="">BUY NOW</a>
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="card">
+              <img src="./assert/img/Com_suon.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="card-sale-percent"><span>-35%</span></div>
+                <div class="card-sold-out"><span>Sold-out</span></div>
+                <h5 class="card-title"><a href="#">Cơm sườg bì chả</a></h5>
+                <p class="card-text">1 cơm trắng, thịt, bì chả, trứng bì chả, trứngbì chả, trứng</p>
+                <div class="card-group">
+                  <div class="card-price-group">
+                    <span class="card-price">
+                      35,000d
+                    </span>
+                    <span class="card-original-price">
+                      35,000d
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-main ">
+                  <a href="#" class="">BUY NOW</a>
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="card">
+              <img src="./assert/img/Com_suon.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="card-sale-percent"><span>-35%</span></div>
+                <div class="card-sold-out"><span>Sold-out</span></div>
+                <h5 class="card-title"><a href="#">Cơm sườg bì chả</a></h5>
+                <p class="card-text">1 cơm trắng, thịt, bì chả, trứng bì chả, trứngbì chả, trứng</p>
+                <div class="card-group">
+                  <div class="card-price-group">
+                    <span class="card-price">
+                      35,000d
+                    </span>
+                    <span class="card-original-price">
+                      35,000d
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-main ">
+                  <a href="#" class="">BUY NOW</a>
+                </button>
+              </div>
+            </div>
+
+          </div>
+          
         </div>
       </div>
     </div>
 
     <!-- 4. Paging -->
-    <div class="container pagging">
-
+    <div class="container-fluid pagination-container">
+      <div class="row">
+        <div class="col-xs-12">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
 
     <!-- 5. Footer  -->
