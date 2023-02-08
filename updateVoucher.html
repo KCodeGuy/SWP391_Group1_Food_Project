@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assert/css/base.css">
+    <link rel="stylesheet" href="./bootstap/bootstrap.css">
+    <link rel="stylesheet" href="./assert/css/home.css">
+    <link rel="stylesheet" href="./assert/font/fontawesome-free-6.1.2-web/css/all.css">
+    <link rel="stylesheet" href="assert/css/updateVoucher.css">
+    <title>Update Voucher</title>
+</head>
+
+<body>
+    <div class="container-fluid wrapper">
+        <!-- 1. Navigation -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a href="home.html">
+                    <img class="navbar-logo" src="./assert/img/Logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home-page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Top-sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Recruit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid body-voucher">
+            <div class="body-form">
+                <form id="myForm">
+                    <h2 class="text-center">UPDATE VOUCHER</h2>
+                    <div class="mb-3">
+                        <label for="voucherID" class="form-label">Voucher code</label>
+                        <input type="text" class="form-control" id="voucherID" name="voucherID"
+                            placeholder="Enter ID of voucher">
+                        <div class="alert-warning" id="txtVoucherIDMessage"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="voucherDescription" class="form-label">Voucher description</label>
+                        <input type="text" class="form-control" id="voucherDescription" name="voucherDescription"
+                            placeholder="Enter description of voucher">
+                        <div class="alert-warning" id="txtVoucherDescriptionMessage"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="voucherPercent" class="form-label">Discount percentage</label>
+                        <input type="number" class="form-control" id="voucherPercent" name="voucherPercent"
+                            placeholder="Enter discount percentage of voucher">
+                        <div class="alert-warning" id="txtVoucherPercentMessage"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="voucherStatus" class="form-label">Status</label>
+                        <select id="voucherStatus" name="voucherStatus" class="custom-select form-control">
+                            <option value="AVAILABLE">AVAILABLE</option>
+                            <option value="UNAVAILABLE">UNAVAILABLE</option>
+                        </select>
+                    </div>
+                    <div class="offset-5 col-7">
+                        <button name="submit" type="submit" class="btn btn-primary"><a href="#">Update</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="container-fluid footer">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <i class="fa-solid fa-phone footer-icon"></i>
+                    <h2 class="footer-heading">Phone</h2>
+                    <p class="footer-info">(0292) 730 363</p>
+                    <p class="footer-info">(0292) 730 364</p>
+                    <p class="footer-info">(0292) 730 365</p>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <i class="fa-solid fa-envelope footer-icon"></i>
+                    <h2 class="footer-heading">Email</h2>
+                    <p class="footer-info">group1shop@gmail.com</p>
+                    <p class="footer-info">group1food@gmail.com</p>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <i class="fa-solid fa-location-dot footer-icon"></i>
+                    <h2 class="footer-heading">Address</h2>
+                    <p class="footer-info">Store 1: 600, đường Nguyễn Văn Cừ nối dài, An Bình, Ninh Kiều, Cần Thơ</p>
+                    <p class="footer-info">Store 2: 123/1A Hai Bà Trưng, Thủ Đức, Tp.HCM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery/Jquery.js"></script>
+    <script src="jquery/updateVoucher.js"></script>
+</body>
+
+</html>

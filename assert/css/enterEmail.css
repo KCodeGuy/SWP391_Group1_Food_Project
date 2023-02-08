@@ -1,0 +1,13 @@
+.body-email {
+    background: var(--main-btn-hover-color);
+    padding: 70px;
+}
+
+.body-form {
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 3%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+}

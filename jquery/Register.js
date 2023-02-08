@@ -6,8 +6,10 @@ var patt_password = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{
 function checkAllData() {
     isValidName = checkName();
     isValidAddress = checkAddress();
+    isValidEmail = checkEmail();
     isValidPassword = checkPassword();
-    isValid = isValidName && isValidAddress && isValidPassword;
+    isValidCPassword = checkConfirm();
+    isValid = isValidName && isValidAddress && isValidPassword && isValidEmail && isValidCPassword;
     return isValid;
 }
 
@@ -39,12 +41,22 @@ function checkAddress() {
     address = $("#address").val();
     if (address === "") {
         $("#txtAddressMessage").html("Address can't be empty");
-    } else if (patt_name.test(address) === false) {
-        $("#txtAddressMessage").html("Address is invalid");
     } else {
         $("#txtAddressMessage").html("");
     }
-    return patt_name.test(address) && address !== "";
+    return address !== "";
+}
+
+function checkEmail() {
+    email = $("#email").val();
+    if (email === "") {
+        $("#txtEmailMessage").html("Email can't be empty");
+    } else if (patt_email.test(email) === false) {
+        $("#txtEmailMessage").html("Email is invalid");
+    } else {
+        $("#txtEmailMessage").html("");
+    }
+    return patt_email.test(email) && email !== "";
 }
 
 function checkPassword() {
@@ -59,6 +71,17 @@ function checkPassword() {
     return patt_password.test(password) && password !== "";
 }
 
+function checkConfirm() {
+    password = $("#password").val();
+    confirm = $("#confirm").val();
+    if (confirm === password) {
+        $("#txtConfirmMessage").html('');
+    } else {
+        $("#txtConfirmMessage").html("Passwords do not match!");
+    }
+    return confirm !== password;
+}
+
 $(document).ready(function () {
     $("#name").blur(function () {
         checkName();
@@ -69,8 +92,14 @@ $(document).ready(function () {
     $("#address").blur(function () {
         checkAddress();
     });
+    $("#email").blur(function () {
+        checkEmail();
+    });
     $("#password").blur(function () {
         checkPassword();
+    });
+    $("#confirm").blur(function () {
+        checkConfirm();
     });
     $("#myForm").bind({
         'submit': function () {
