@@ -1,0 +1,104 @@
+.body-orderDetail {
+    background-color: var(--background-color);
+    padding: 30px;
+}
+
+.body-orderDetail1 {
+    border-radius: 3px;
+    margin: auto;
+    background-color: #f0c879;
+    box-shadow: 1px 1px 4px 2px rgb(107, 107, 116);
+    width: 800px;
+    padding: 30px;
+}
+
+.body-first-orderDeatail {
+    background-color: var(--background-color);
+    padding: 10px;
+    border-radius: 3px;
+    margin: auto;
+    background-color: #efcd89;
+    box-shadow: 1px 1px 2px 1px rgb(107, 107, 116);
+    width: 700px;
+}
+
+/* .row{
+    margin: 5px;
+    height: 25px;
+
+} */
+
+.form-control {
+    height: 25px;
+    margin: 5px;
+}
+
+.text-center {
+    margin-top: 30px;
+    padding: 10px;
+    text-shadow: 2px 2px 2px rgb(138, 138, 150);
+}
+
+.body-table table thead {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.body-table table thead th {
+    padding-left: 20px;
+}
+
+
+
+.body-table table tbody th {
+    padding-left: 10px;
+}
+
+.body-table table tbody td {
+    padding-left: 20px;
+}
+
+.body-table table tbody img {
+    width: 120px;
+    height: 70px;
+    border-radius: 3px;
+}
+
+.body-table table tbody td a {
+    color: black;
+}
+
+.quantity {
+    padding-left: 25px;
+}
+
+
+.total {
+    text-align: right;
+}
+
+.finalForm {
+    text-align: center;
+
+}
+
+.btn-primary {
+    width: 100px;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-btn-hover-color);
+}
+
+.cancel {
+    width: 100px;
+    border: none;
+    height: 35px;
+    border-radius: 3px;
+}
+
+.cancel:hover {
+    background-color: var(--main-btn-shadow-color);
+}
