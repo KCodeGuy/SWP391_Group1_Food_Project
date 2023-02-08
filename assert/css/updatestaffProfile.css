@@ -1,0 +1,68 @@
+.body-updateUserProfile {
+    background-color: var(--main-btn-hover-color);
+    padding: 30px;
+
+}
+
+.body-form {
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 1px 1px 4px 2px rgb(107, 107, 116);
+    width: 400px;
+    padding: 30px;
+}
+
+.mb-3 {
+
+    padding-left: 15px;
+}
+
+.fa-user-pen {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    padding-top: 12px;
+    padding-left: 5px;
+
+}
+
+.logo {
+    font-size: 23px;
+}
+
+.text-center {
+    padding: 10px 0px;
+    text-shadow: 2px 2px 2px rgb(138, 138, 150);
+}
+
+#exampleEmailAddress{
+background-color: lightgray;
+}
+
+.finalForm{
+    text-align: center;
+   
+}
+.btn-primary{
+    width: 100px;
+   text-align: center;
+   margin-right: 30px;
+}
+.btn-primary:hover {
+    background-color: var(--primary-btn-hover-color);
+}
+.cancel{
+    width: 100px;
+    border: none;
+    height: 35px;
+    border-radius: 3px;
+}
+
+.cancel:hover{
+    background-color: var(--main-btn-shadow-color);
+}
+

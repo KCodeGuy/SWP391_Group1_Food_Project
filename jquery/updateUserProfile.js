@@ -6,10 +6,8 @@ var patt_password = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{
 function checkAllData() {
     isValidName = checkName();
     isValidAddress = checkAddress();
-
     isValidPassword = checkPassword();
     isValid = isValidName && isValidAddress && isValidPassword;
-
     return isValid;
 }
 

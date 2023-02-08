@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assert/css/base.css">
+    <link rel="stylesheet" href="./bootstap/bootstrap.css">
+    <link rel="stylesheet" href="./assert/css/home.css">
+    <link rel="stylesheet" href="./assert/css/updateProduct.css">
+    <link rel="stylesheet" href="./assert/font/fontawesome-free-6.1.2-web/css/all.css">
+    <title> Update product</title>
+</head>
+
+<body>
+    <!-- Wrapper contains all website's components -->
+    <div class="container-fluid wrapper">
+        <!-- 1. Navigation -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a href="home.html">
+                    <img class="navbar-logo" src="./assert/img/Logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home-page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Top-sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Recriut</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid body-updateUserProfile">
+            <div class="body-form">
+                <form id="myForm">
+                    <div class="logo text-center">
+                        <i class="fa-solid fa-user-pen fa-circle"></i>
+                    </div>
+                    <h2 class="text-center">UPDATE PRODUCT</h2>
+                    <div class="mb-3">
+                        <b class="form-label">Name of product</b>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter name of product">
+                        <div class="alert-warning" id="txtNameMessage"></div>
+                    </div>
+                    <div class="mb-3">
+                        <b class="form-label">Price </b>
+                        <input type="number" class="form-control" id="price" name="price" placeholder="Enter price of product">
+                        <div class="alert-warning" id="txtNameMessage1"></div>
+                    </div>
+
+                    <div class="mb-3">
+                        <b class="form-label">Sales off </b>
+                        <input type="number" class="form-control" id="salesoff" name="salesoff" placeholder="Enter sales of product">
+                        <div class="alert-warning" id="txtNameMessage2"></div>
+                    </div>
+                       
+                    <div class="mb-3">
+                        <b class="form-label">Status </b>
+                        <select id="category" name="category" class="custom-select form-control ">
+                            <option value="SOUL_OUT">SOUL_OUT</option>
+                            <option value="AVAILABLE">AVAILABLE</option>
+                            <option value="REMOVED">REMOVED</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <b class="form-label">Category </b>
+                        <select id="category" name="category" class="custom-select form-control">
+                            <option value="category1">Category 1</option>
+                            <option value="category1">Category 1</option>
+                            <option value="category1">Category 1</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <b class="form-label">Description </b>
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="enter description of product">
+                        <div class="alert-warning" id="txtPhoneMessage"></div>
+                    </div>
+
+                    <div class="finalForm">
+                        <button type="Submit" name="submit" class="btn btn-primary">Submit</button>
+                        
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- 5. Footer  -->
+        <div class="container-fluid footer">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <i class="fa-solid fa-phone footer-icon"></i>
+                    <h2 class="footer-heading">Phone</h2>
+                    <p class="footer-info">(0292) 730 363</p>
+                    <p class="footer-info">(0292) 730 364</p>
+                    <p class="footer-info">(0292) 730 365</p>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <i class="fa-solid fa-envelope footer-icon"></i>
+                    <h2 class="footer-heading">Email</h2>
+                    <p class="footer-info">group1shop@gmail.com</p>
+                    <p class="footer-info">group1food@gmail.com</p>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <i class="fa-solid fa-location-dot footer-icon"></i>
+                    <h2 class="footer-heading">Address</h2>
+                    <p class="footer-info">Store 1: 600, đường Nguyễn Văn Cừ nối dài, An Bình, Ninh Kiều, Cần Thơ</p>
+                    <p class="footer-info">Store 2: 123/1A Hai Bà Trưng, Thủ Đức, Tp.HCM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./bootstap/bootstrap.js"></script>
+    <script src="jquery/Jquery.js"></script>
+    <script src="jquery/updateProduct.js"></script>
+</body>
+
+</html>
